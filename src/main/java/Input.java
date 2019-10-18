@@ -9,20 +9,27 @@ public class Input{
     scanner = new Scanner(System.in);
   }
 
+  /**
+   * set variable operation
+   * @param operation
+   */
   public void setOperation(char operation) {
     this.operation = operation;
   }
-
+  /**
+   * Set the variable num1
+   * @param num1
+   */
   public void setNum1(int num1) {
     this.num1 = num1;
   }
 
+  /**
+   * Set the variable num2
+   * @param num2
+   */
   public void setNum2(int num2) {
     this.num2 = num2;
-  }
-
-  public void enterOperation(char operation) {
-    this.operation = operation;
   }
 
   public int getNum1(){

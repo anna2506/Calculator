@@ -64,7 +64,7 @@ public Number calc(Number num, String trigFunc){
                         else{
                                 System.out.println("The input error. Please, try again.");
                         }
-                        System.out.print("The sin of num1 is ");
+                        System.out.print("The sin of " + num + " is ");
                         break;
                 case "cos":
                         if(num instanceof Integer){
@@ -79,7 +79,7 @@ public Number calc(Number num, String trigFunc){
                         else{
                                 System.out.println("The input error. Please, try again.");
                         }
-                        System.out.print("The cos of num1 is ");
+                        System.out.print("The cos of " + num + " is ");
                         break;
                 case "tan":
                         if(num instanceof Integer){
@@ -94,7 +94,7 @@ public Number calc(Number num, String trigFunc){
                         else{
                                 System.out.println("The input error. Please, try again.");
                         }
-                        System.out.print("The tan of num1 is ");
+                        System.out.print("The tan of " + num + " is ");
                         break;
                 case "ctg":
                         if(num instanceof Integer){
@@ -109,7 +109,7 @@ public Number calc(Number num, String trigFunc){
                         else{
                                 System.out.println("The input error. Please, try again.");
                         }
-                        System.out.print("The ctg of num1 is ");
+                        System.out.print("The ctg of " + num + " is ");
                         break;
                 default:
                         break;

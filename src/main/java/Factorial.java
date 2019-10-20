@@ -45,7 +45,7 @@ public class Factorial {
     else{
       System.out.println("The input error. Please, try again.");
     }
-    System.out.print("The factorial of num is ");
+    System.out.print("The factorial of " + num + " is ");
     return result;
   }
 

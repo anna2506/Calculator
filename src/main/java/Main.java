@@ -16,7 +16,8 @@ public class Main{
         System.out.println("We have some options to calculate. Choose the one you want: \n" +
                 "1 - Calculate the logarithm \n" +
                 "2 - Calculate trigonometric functions \n" +
-                "3 - Calculate the factorial");
+                "3 - Calculate the factorial \n" +
+                "4 - Calculate the degree of a number");
         answer = scanner.next();
         switch (answer) {
           case "1":
@@ -40,7 +41,13 @@ public class Main{
             num = factorial.getNum();
             System.out.println(factorial.calc(num));
             break;
-
+          case "4":
+            Exponentiation exponentiation = new Exponentiation();
+            exponentiation.enterNum1();
+            exponentiation.enterNum2();
+            num1 = exponentiation.getNum1();
+            num2 = exponentiation.getNum2();
+            System.out.println(exponentiation.calc(num1, num2));
           default:
             break;
         }

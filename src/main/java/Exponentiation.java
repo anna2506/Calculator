@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class Logarithm {
+public class Exponentiation {
   static Scanner scanner;
   private Number num1;
   private Number num2;
-  public Logarithm(){
+  public Exponentiation(){
     scanner = new Scanner(System.in);
   }
   /**
@@ -30,7 +30,7 @@ public class Logarithm {
     return num2;
   }
   public Number enterNum1(){
-    System.out.println("Enter the base of the logarithm: ");
+    System.out.println("Enter the number you want to exponate: ");
     if(scanner.hasNextInt()){
       num1 = scanner.nextInt();
     }
@@ -48,7 +48,7 @@ public class Logarithm {
     return num1;
   }
   public Number enterNum2(){
-    System.out.println("Enter the degree of logarithm: ");
+    System.out.println("Enter the degree of number: ");
     if(scanner.hasNextInt()){
       num2 = scanner.nextInt();
     }
@@ -68,18 +68,18 @@ public class Logarithm {
   public Number calc(Number num1, Number num2){
     Number result = null;
     if(num1 instanceof Integer && num2 instanceof Integer){
-      result = Math.log(num1.intValue())/Math.log(num2.intValue());
+      result = Math.pow(num1.intValue(), num2.intValue());
     }
     else if(num1 instanceof Double && num2 instanceof Double){
-      result = Math.log(num1.doubleValue())/Math.log(num2.doubleValue());
+      result = Math.pow(num1.doubleValue(), num2.doubleValue());
     }
     else if(num1 instanceof Long && num2 instanceof Integer){
-      result = Math.log(num1.longValue())/Math.log(num2.longValue());
+      result = Math.pow(num1.longValue(), num2.longValue());
     }
     else{
       System.out.println("The input error. Please, try again.");
     }
-    System.out.print("The logarithm of " + num1 + " to base " + num2 + " is ");
+    System.out.print("The " + num1 + " in " + num2 + " degree is ");
     return result;
   }
 }

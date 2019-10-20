@@ -10,14 +10,31 @@ public class Main{
     if(scanner.hasNext()){
       answer = scanner.next();
     }
-    switch (answer){
+    switch (answer) {
       case "y":
-        Logarithm logarithm = new Logarithm();
-        logarithm.enterNum1();
-        logarithm.enterNum2();
-        num1 = logarithm.getNum1();
-        num2 = logarithm.getNum2();
-        System.out.print(logarithm.calc(num1, num2));
+        System.out.println("We have some options to calculate. Choose the one you want: \n" +
+                "1 - Calculate the logarithm \n" +
+                "2 - Calculate trigonometric functions");
+        answer = scanner.next();
+        switch (answer) {
+          case "1":
+            Logarithm logarithm = new Logarithm();
+            logarithm.enterNum1();
+            logarithm.enterNum2();
+            num1 = logarithm.getNum1();
+            num2 = logarithm.getNum2();
+            System.out.print(logarithm.calc(num1, num2));
+            break;
+          case "2":
+            Trigonometry trigonometry = new Trigonometry();
+            String trigFunc = trigonometry.enterTrigonometryFunction();
+            trigonometry.enterNum();
+            Number num = trigonometry.getNum();
+            System.out.println(trigonometry.calc(num, trigFunc));
+            break;
+          default:
+            break;
+        }
         break;
       case "n":
         Calculator calculator = new Calculator();

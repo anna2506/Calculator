@@ -45,6 +45,9 @@ public class Input{
     else if(scanner.hasNextDouble()){
       num1 = scanner.nextDouble();
     }
+    else if(scanner.hasNextLong()){
+      num1 = scanner.nextLong();
+    }
     else{
       System.out.println("Your input is incorrect. Please, try again.");
       scanner.next();
@@ -59,6 +62,9 @@ public class Input{
     }
     else if(scanner.hasNextDouble()){
       num2 = scanner.nextDouble();
+    }
+    else if(scanner.hasNextLong()){
+      num2 = scanner.nextLong();
     }
     else{
       System.out.println("Your input is incorrect. Please, try again.");

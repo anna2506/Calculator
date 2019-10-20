@@ -101,7 +101,9 @@ public class Calculator{
     }
     else if(num1 instanceof Double && num2 instanceof Double){
      result = num1.doubleValue() + num2.doubleValue();
-
+    }
+    else if(num1 instanceof Long && num2 instanceof Long){
+      result = num1.longValue() + num2.longValue();
     }
     else{
       System.out.println("Your input is incorrect.Please, try again");
@@ -117,7 +119,9 @@ public class Calculator{
     }
     else if(num1 instanceof Double && num2 instanceof Double){
       result = num1.doubleValue() - num2.doubleValue();
-
+    }
+    else if(num1 instanceof Long && num2 instanceof Long){
+      result = num1.longValue() - num2.longValue();
     }
     else{
       System.out.println("Your input is incorrect.Please, try again");
@@ -133,7 +137,9 @@ public class Calculator{
     }
     else if(num1 instanceof Double && num2 instanceof Double){
       result = num1.doubleValue() * num2.doubleValue();
-
+    }
+    else if(num1 instanceof Long && num2 instanceof Long){
+      result = num1.longValue() * num2.longValue();
     }
     else{
       System.out.println("Your input is incorrect.Please, try again");
@@ -154,15 +160,24 @@ public class Calculator{
       }
     }
     else if(num1 instanceof Double && num2 instanceof Double){
-      if(num1.intValue() != 0.0) {
-        result = num1.intValue() / num2.intValue();
+      if(num1.doubleValue() != 0.0) {
+        result = num1.doubleValue() / num2.doubleValue();
         return result;
       }
       else{
         System.out.println("Division by zero!");
-        return num1.intValue();
+        return num1.doubleValue();
       }
-
+    }
+    else if(num1 instanceof Long && num2 instanceof Long){
+      if(num1.longValue() != 0) {
+        result = num1.longValue() / num2.longValue();
+        return result;
+      }
+      else{
+        System.out.println("Division by zero!");
+        return num1.longValue();
+      }
     }
     else{
       System.out.println("Your input is incorrect.Please, try again");

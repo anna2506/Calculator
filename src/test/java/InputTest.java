@@ -7,9 +7,9 @@ public class InputTest {
   @Test
   public void getNum1() {
     Input input = new Input();
-    int expNum1 = 10;
+    Number expNum1 = 10;
     input.setNum1(10);
-    int num1 = input.getNum1();
+    Number num1 = input.getNum1();
     Assert.assertEquals(expNum1, num1);
 
   }
@@ -17,9 +17,9 @@ public class InputTest {
   @Test
   public void getNum2() {
     Input input = new Input();
-    int expNum2 = 10;
+    Number expNum2 = 10;
     input.setNum2(10);
-    int num2 = input.getNum2();
+    Number num2 = input.getNum2();
     Assert.assertEquals(expNum2, num2);
   }
 

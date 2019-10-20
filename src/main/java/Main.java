@@ -7,6 +7,7 @@ public class Main{
     String answer = "";
     Number num1;
     Number num2;
+    Number num;
     if(scanner.hasNext()){
       answer = scanner.next();
     }
@@ -14,7 +15,8 @@ public class Main{
       case "y":
         System.out.println("We have some options to calculate. Choose the one you want: \n" +
                 "1 - Calculate the logarithm \n" +
-                "2 - Calculate trigonometric functions");
+                "2 - Calculate trigonometric functions \n" +
+                "3 - Calculate the factorial");
         answer = scanner.next();
         switch (answer) {
           case "1":
@@ -29,9 +31,16 @@ public class Main{
             Trigonometry trigonometry = new Trigonometry();
             String trigFunc = trigonometry.enterTrigonometryFunction();
             trigonometry.enterNum();
-            Number num = trigonometry.getNum();
+            num = trigonometry.getNum();
             System.out.println(trigonometry.calc(num, trigFunc));
             break;
+          case "3":
+            Factorial factorial = new Factorial();
+            factorial.enterNum();
+            num = factorial.getNum();
+            System.out.println(factorial.calc(num));
+            break;
+
           default:
             break;
         }

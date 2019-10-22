@@ -1,3 +1,6 @@
 [submodule "ApacheCommons"]
 	path = ApacheCommons
 	url = https://github.com/anna2506/Calculator
+[submodule "Generator"]
+	path = Generator
+	url = https://github.com/Cherkasik/Generator

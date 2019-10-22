@@ -4,3 +4,6 @@
 [submodule "Generator"]
 	path = Generator
 	url = https://github.com/Cherkasik/Generator
+[submodule "Parsing"]
+	path = Parsing
+	url = https://github.com/kav128/Parsing

@@ -63,7 +63,7 @@ public class Main{
       default:
         break;
     }
-
+System.out.println("Bye!");
 
   }
 }
